@@ -18,9 +18,8 @@ h1.title {display: none;}
 
 
 /* URLs */
-a {
-	color: cyan;
-}
+a:link { color: cyan; }
+a:visited { color: hotpink; }
 
 body {
 	background-color: var(--background);
@@ -35,7 +34,7 @@ body {
 }
 
 html {
-	font-family: "Ubuntu Nerd Font", sans-serif;
+	font-family: "Helvetica", "Verdana", sans-serif;
 	color: #ffffff;
 }
 
@@ -48,7 +47,7 @@ h2 { color: var(--secondary); }
 /* Code Snippets */
 /* Inline */
 code {
-	font-family: "JetBrainsMono NF", monospace;
+	font-family: "Courier New", monospace;
 	background-color: var(--background2);
     overflow: auto;
 	/*
