@@ -1,13 +1,130 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Page Title</title>
+        <title>Projects</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Noto+Sans+Display' rel='stylesheet'>
+		<link rel='stylesheet' href="fonts.css">
     </head>
 
-    <body>
-		<h1>This is another page</h1>
+    <body onload="onload()">
+		<script src="navbar.js" id="replace_with_navbar"></script>
+		<span class="anchor" id="homepage"></span>
+		<h1>Hello World</h1>
+		Hi! I'm Haseeb. I am a 3rd year CS student at the University of Toronto. Some of my interests include:
+		<ul>
+			<li>Compilers</li>
+			<li>Operating Systems (Linux)</li>
+			<li>Game Development (C++/SDL/OpenGL) and modding (hacking 90s Nintendo games)</li>
+			<li>Science Fiction</li>
+		</ul>
+
+		<span class="anchor" id="projects"></span>
+		<h1>Projects</h1>
+		<div class="projectslist">
+
+		<h2>Reverse Assembler</h2>
+		<div class="projectinfo reverse">
+			<div class="projectimgs">
+				<figure>
+				<img src="reverse-asm-instr-set.png" class="projectimg">
+				<figcaption>Part of an instruction set script for an
+				IBM PowerPC series 32bit processor. I spent over 3 hours
+				transcribing it from the processor's manual</figcaption>
+				</figure>
+				<figure>
+				<img src="reverse-asm-some-asm.png" class="projectimg">
+				<figcaption>Part of a 1.6 million instruction program, disassembled in under 1 second</figcaption>
+				</figure>
+			</div>
+			<div class="projectdesc">
+				I learned Rust by working on this project.
+				It turns compiled code for any processor into
+				readable assembly.
+				I'm quite proud of
+				how clean I kept the code, which is over 1100
+				lines.
+				<br>
+				The full source code is available on GitHub:
+				<a href="https://www.github.com/HaseebManzoor6/Reverse-Assembler">https://www.github.com/HaseebManzoor6/Reverse-Assembler</a>
+				<h3>How does it work?</h3>
+				I designed a scripting format to describe assembly
+				languages.
+				Instructions can contain data like memory
+				addresses and constant numbers, encoded
+				using logical operators like bitshifting.
+				<br>
+				<br>
+				The script is used to create a series of nested
+				hash tables
+				that allow it to identify each instruction
+				uniquely. This allows a disassembler to be created
+				dynamically for any instruction set.
+				<br>
+				<br>
+				If a file of compiled instructions is given (the
+				<code>text</code> portion of an executable binary),
+				it will be disassembled. This takes 2 passes
+				over the file (one to generate branch labels),
+				and is very fast: over 2.6 million 32bit instructions
+				per second.
+				<h3>Future Plans</h3>
+				At some point I plan to expand this project with re-assembling.
+				After that it could be used to explore some really interesting ideas
+				of translating a compiled program to a different architecture.
+			</div>
+		</div>
+		<hr>
+
+		<h2>Attachment - Puzzle/Dating Sim Game</h2>
+		<div class="projectinfo">
+			<div class="projectimgs">
+				<figure>
+					<img src="attachment_game.png" class="projectimg" style="max-width: 600px;">
+					<figcaption>
+						An in-game screenshot
+					</figcaption>
+				</figure>
+			</div>
+			<div class="projectdesc">
+				This one was really fun to work on.
+				It was a game we made in a team of 4, part
+				dating sim and part Boggle (the word finding puzzle
+				game). It stars Clippy, everyone's favourite
+				sentient paperclip.
+				<br>
+				<br>
+				It was made in Java using JavaFX. My contributions included an
+				option to control the Boggle game by keyboard instead of mouse, adding fancy
+				backgrounds and a Windows 95 aesthetic, and implementing save files.
+			</div>
+		</div>
+		<hr>
+
+		<h2>Pacman AI</h2>
+		<div class="projectinfo reverse">
+			<div class="projectimgs">
+				<figure>
+					<img src="pacman.gif" class="projectimg" style="max-height: 400px;">
+					<figcaption>
+					My algorithm's solution to a basic maze.
+					Red squares were searched more often.
+					</figcaption>
+				</figure>
+			</div>
+			<div class="projectdesc">
+				This is an AI algorithm I wrote to solve Pacman-style mazes.
+				<br>
+				<br>
+				Initially, it used simpler AI algorithms like breadth-first and depth-first search.
+				To make things faster I implemented A* heuristic search, and compared several
+				heuristics.
+				Some of the better ones included the smallest Manhattan or Euclidean distance from
+				Pacman to the nearest food pellet, and the distance from Pacman to the corners of the map.
+			</div>
+		</div>
+		<hr>
     </body>
 </html>
 
