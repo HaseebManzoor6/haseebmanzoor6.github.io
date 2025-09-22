@@ -135,7 +135,9 @@ li {
 
 	list-style-type: none;
 	background-color: var(--background2);
+	/*
 	overflow: scroll;
+	*/
 }
 
 .navitem {
@@ -146,7 +148,9 @@ li {
 	margin: 0;
 	text-align: center;
 	float: left;
+	/*
 	height: 100%;
+	*/
 	font-weight: bold;
 }
 

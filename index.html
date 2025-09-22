@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Projects</title>
+        <title>Haseeb's Webpage</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="style.css">
 		<link href='https://fonts.googleapis.com/css?family=Noto+Sans+Display' rel='stylesheet'>
@@ -11,19 +11,18 @@
     <body onload="onload()">
 		<script src="navbar.js" id="replace_with_navbar"></script>
 		<span class="anchor" id="homepage"></span>
-		<h1>Hello World</h1>
-		Hi! I'm Haseeb. I am a 3rd year CS student at the University of Toronto. Some of my interests include:
+		<h1>Haseeb's Webpage</h1>
+		I am a 4th year CS student at the University of Toronto. Some of my interests include:
 		<ul>
-			<li>Compilers</li>
-			<li>Operating Systems (Linux)</li>
-			<li>Game Development (C++/SDL/OpenGL) and modding (hacking 90s Nintendo games)</li>
+			<li>Operating Systems (Arch, Gentoo, Ubuntu, Debian, RHEL, FreeBSD)</li>
+			<li>Cybersecurity (&gt;2yrs SOC experience in the manufacturing sector)</li>
+			<li>Game Development (C++/SDL/OpenGL) and modding (hacking DOOM and other 90s games)</li>
 			<li>Science Fiction</li>
 		</ul>
 
 		<span class="anchor" id="projects"></span>
 		<h1>Projects</h1>
 		<div class="projectslist">
-
 		<h2>Reverse Assembler</h2>
 		<div class="projectinfo reverse">
 			<div class="projectimgs">
@@ -77,8 +76,49 @@
 		</div>
 		<hr>
 
-		<h2>Attachment - Puzzle/Dating Sim Game</h2>
+		<h2>Custom *nix Desktop</h2>
 		<div class="projectinfo">
+			<div class="projectimgs">
+				<figure>
+				<img src="desktop.png" class="projectimg">
+				<figcaption>A screenshot of my desktop setup
+				</figcaption>
+				</figure>
+			</div>
+			<div class="projectdesc">
+				This is my custom desktop environment for Unix-like operating systems
+				(Linux or BSD primarily). It features a window manager, terminal, and application launcher.
+				This project is a collection of my own personal forks of
+				<a href="suckless.org">https://www.suckless.org</a>
+				projects, with source code modifications/patches maintained by me in the C language.
+				<br>
+				<br>
+				This has been my daily-driver for about 2 years of school and personal use now.
+				It is easy to setup and use on Arch, Gentoo, and FreeBSD.
+				<br>
+				<br>
+				I prefer to use a minimalist desktop environment for a few reasons.
+				I believe tech literacy is crucial for everyone in today's world, as
+				more and more people become reliant on technology without anyone to teach them
+				how it works under the hood. Using a minimalist operating system helps me appreciate
+				how much work goes into every computer system, in a time where many of us have 3+
+				phones/tablets/laptops on hand every day.
+				<br>
+				I also appreciate the reduced code complexity of
+				<a href="suckless.org">https://www.suckless.org</a>
+				projects, as it ensures easy maintenance and makes security vulnerabilities easy to identify
+				and patch.
+				<br>
+				<br>
+				You can find the complete source code on Gitlab:
+				<a href="https://gitlab.com/HM2distortion/desktop">https://gitlab.com/HM2distortion/desktop</a>
+			</div>
+		</div>
+		<hr>
+
+
+		<h2>Attachment - Puzzle/Dating Sim Game</h2>
+		<div class="projectinfo reverse">
 			<div class="projectimgs">
 				<figure>
 					<img src="attachment_game.png" class="projectimg" style="max-width: 600px;">
@@ -88,11 +128,11 @@
 				</figure>
 			</div>
 			<div class="projectdesc">
-				This one was really fun to work on.
-				It was a game we made in a team of 4, part
+				This was a game we made in a team of 4, part
 				dating sim and part Boggle (the word finding puzzle
 				game). It stars Clippy, everyone's favourite
 				sentient paperclip.
+				A fun project to work on.
 				<br>
 				<br>
 				It was made in Java using JavaFX. My contributions included an
