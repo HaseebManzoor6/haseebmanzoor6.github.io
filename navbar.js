@@ -12,6 +12,7 @@ var bar='';
 bar+='<ul class="navbar">';
 bar+='<a href="#homepage"><li class="navitem">Home</li></a>';
 bar+='<a href="#projects"><li class="navitem">Projects</li></a>';
+bar+='<a href="#links"><li class="navitem">Links</li></a>';
 bar+='</ul>';
 
 function onload() {

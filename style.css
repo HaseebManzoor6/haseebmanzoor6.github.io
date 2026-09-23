@@ -103,6 +103,12 @@ tr:hover {
 	margin-right: auto;
 }
 
+video .projectimg {
+	margin-left: 0%;
+	margin-right: 0%;
+	padding: 0%;
+}
+
 /* Quotes */
 blockquote {
 	background-color: var(--background2);
